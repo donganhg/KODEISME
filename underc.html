@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Under Construction</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+            .container{
+                max-width: 500px;
+                margin: 0 auto;
+                font-family: 'Poppins', sans-serif;;
+            }
+            #image img{
+                width: 100%;
+            }
+            #deskripsi h1{
+                color: #2b546a;
+                line-height: 14px;
+            }
+            #entertain p,span{
+                display: inline-block;
+            }
+            #entertain p{
+                font-weight: bold;
+                color: red;
+            }
+            #button{
+                margin-left: 5px;
+                padding: 10px 40px;
+                color: white;
+                background-color: blueviolet;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: all 0.6s;
+            }
+            #button:hover{
+                padding: 8px 38px;
+                background-color: rgba(148, 60, 231, 0.9)
+            }
+            #yt{
+                width: 800px;
+                margin: 0 auto;
+                margin-top: 20px;
+            }
+            iframe{
+                margin: 0 auto;
+            }
+
+            @media screen and (max-width: 670px) {
+                #image img{
+                    width: 80%;
+                }
+
+                #deskripsi h1{
+                    line-height: 25px;
+                }
+
+                #yt{
+                    width: 300px;
+                    height: 150px;
+                    margin: 0;
+                    margin-top: 10px;
+                }
+                iframe{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div id="image">
+                <img src="assets/images/underC.svg" alt="">
+            </div>
+            <div id="deskripsi">
+                <h1>Oops!</h1>
+                <h1>Website is under construction</h1>
+            </div>
+            <div id="entertain">
+                <p>Enjoy the entertainment bellow</p>
+                <p>or</p>
+                <a href="index.html"><span id="button">Back to Home</span></a>
+            </div>
+        </div>
+        <div id="yt">
+            <iframe width="800" height="600" src="https://www.youtube.com/embed/RAGcDi0DRtU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+          
+    </body>
+
+</html>
