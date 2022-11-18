@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+#header{
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+#header-left{
+    background-color: rgb(146, 67, 219);
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+#header-left img{
+    width: 110px;
+    margin-top: 7px;
+}
+
+#navi{
+    background-color: blueviolet;
+    text-align: center;
+    border-radius: 15px;
+    padding-right: 10px;
+}
+#navi li{
+    display: inline;
+    margin-left: 10px;
+}
+
+.link:hover{
+    border-bottom: 2px solid yellow;
+}
+
+#login{
+    display: inline-block;
+    padding: 4px 15px;
+    background-color: white;
+    color: black;
+    border-radius: 6px;
+    transition: all 0.5s;
+}
+
+#login:hover{
+    background-color: #8f94fb;
+    color: white;
+}
+
+#menubar{
+    background-color: blueviolet;
+    border-radius: 10px;
+    padding: 13px 10px 0 10px;
+    display: none;
+    cursor: pointer;
+}
+
+#menubar img{
+    width: 26px;
+}
+
+main{
+    margin: 40px 0;
+}
+
+#jumbotron{
+    border-radius: 25px;
+    background-image: linear-gradient(90deg, #4e54c8 0%, #8f94fb 100%);
+    justify-content: space-between;
+    padding: 60px 40px;
+}
+
+#jumbotron-left{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#jumbotron-left h1{
+    font-size: 40px;
+    color: #fff;
+}
+
+#button{
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: all 0.6s;
+    border-radius: 5px;
+}
+
+#button:hover{
+    color: white;
+    background-color: #8f94fb;
+}
+
+#jumbotron-right img{
+    width: 500px;
+}
+
+#content{
+    margin-top: 40px;
+}
+
+#content-left{
+    flex-basis: 100%;
+    border-radius: 25px;
+    background-image: linear-gradient(90deg, #355c7d 0%, #6c5b7b 50%, #c06c84 100%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#lesson-title{
+    color: white;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #82DBD8;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content-row{
+    display: flex;
+}
+
+.box{
+    flex-grow: 1;
+    margin: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 5px;
+    transition: all 0.6s;
+}
+
+.box:hover{
+    background-color: #2F8F9D;
+    flex-grow: 2;
+}
+
+.class-icon{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.class-icon img{
+    width: 100px;
+}
+
+.class-title{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#reason{
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+#reason h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #2F8F9D;
+    text-align: center;
+    color: #2b546a;
+}
+
+.why{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 20px;
+}
+
+.why-deskripsi{
+    flex-basis: 50%;
+    color: #2b546a;
+    font-family: sans-serif;
+    padding-top: 35px;
+}
+
+.why-deskripsi h3{
+    font-size: 40px;
+}
+
+.why-gambar{
+    flex-basis: 50%;
+    text-align: right;
+}
+
+.why-gambar img{
+    width: 80%;
+}
+
+.second{
+    text-align: left;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.left-reveal{
+    position: relative;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.left-reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.right-reveal{
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.right-reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+footer{
+    padding-bottom: 10px;
+}
+
+.footer{
+    justify-content: space-between;
+    background-color: #2f8e9d;
+    padding: 35px;
+    border-radius: 15px;
+}
+
+.footer-left img{
+    width: 120px;
+}
+
+.footer p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.footer-right{
+    display: flex;
+    align-items: center;
+}
+
+.footer-right img{
+    margin-left: 30px;
+    width: 33px;
+    cursor: pointer;
+}
+
+#navigasi{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+    
+}
+
+#navbar{
+    width: 400px;
+    height: 0px;
+    background-color: blueviolet;
+    color: white;
+    transition: all 1s;
+    text-align: right;
+    padding-right: 15px;
+}
+
+#test{
+    display: block;
+}
+
+#test li{
+    display: inline;
+    margin-left: 20px;
+}
+
+#test a{
+    font-size: 12px;
+}

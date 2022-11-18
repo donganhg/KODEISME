@@ -1,0 +1,118 @@
+@media screen and (max-width: 1000px) {
+    .container{
+        margin: 0 10px;
+    }
+
+    #jumbotron{
+        padding: 10px 30px 30px 30px;
+    }
+
+    #jumbotron-left h1{
+        font-size: 30px;
+    }
+
+    #jumbotron-right img{
+        width: 350px;
+    }
+
+    #content{
+        flex-direction: column;
+    }
+
+    aside{
+        flex-direction: row;
+        width: 600px;
+        margin-top: 20px;
+        margin: 20px auto;
+    }
+
+    #foto{
+        flex-basis: 50%;
+    }
+
+    #deskrispi{
+        flex-basis: 50%;
+    }
+
+    table{
+        padding-top: 20px;
+    }
+
+    #foto img{
+        width: 100%;
+    }
+
+    .why-deskripsi{
+        padding-top: 0;
+    }
+
+}
+
+@media screen and (max-width: 670px) {
+    nav{
+        display: none;
+    }
+
+    #menubar{
+        display: block;
+    }
+
+    #jumbotron{
+        flex-direction: column-reverse;
+        padding: 20px 20px;
+    }
+
+    #button{
+        border-radius: 10px;
+    }
+
+    #jumbotron-right{
+        text-align: center;
+    }
+
+    #jumbotron-right img{
+        width: 100%;
+    }
+
+    .class-icon img{
+        width: 50px;
+    }
+
+    .content-row{
+        display: block
+    }
+
+    .box{
+        width: 40%;
+        float: left;
+    }
+
+    aside{
+        flex-direction: column;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #reason h2{
+        font-size: 1.7em;
+    }
+
+    .why{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .why-deskripsi h3{
+        font-size: 20px;
+    }
+
+    footer .flex{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-right{
+        justify-content: center;
+    }
+}
